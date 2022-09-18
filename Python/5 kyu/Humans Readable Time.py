@@ -7,6 +7,3 @@ def make_readable(seconds: int) -> str:
     
 
     return (f"{str(hours).zfill(2)}:{str(minutes % 60).zfill(2)}:{str(seconds % 60).zfill(2)}")
-
-
-print(make_readable(60))
