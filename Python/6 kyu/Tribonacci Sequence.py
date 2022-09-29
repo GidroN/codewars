@@ -17,5 +17,3 @@ def tribonacci(numbers: List[int], num: int) -> List[int]:
         mass[i] = mass[i - 1] + mass[i - 2] + mass[i - 3]
     
     return mass
-
-print(tribonacci([1, 1, 1], 10))
