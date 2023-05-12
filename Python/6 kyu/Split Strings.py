@@ -9,5 +9,3 @@ def solution(s: str) -> List[str]:
         result.append(s[i:i+2])
         
     return result
-
-print(solution("abcdeft"))
