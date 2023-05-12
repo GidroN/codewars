@@ -20,5 +20,5 @@ def is_pangram2(sentence: str) -> bool:
         return True
     
     
-def is_pangram3(sentence: str) -> bool:
+def is_pangram3(sentence: str) -> bool: 
     return set(ascii_lowercase).issubset(sentence.lower())
