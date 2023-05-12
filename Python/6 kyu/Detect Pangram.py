@@ -12,4 +12,13 @@ def is_pangram(sentence: str) -> bool:
     return list(sorted(set(sentence.lower()))) == list(ascii_lowercase)
 
 
-print(is_pangram("The quick brown fox jumps over the lazy dog"))
+def is_pangram2(sentence: str) -> bool:
+    for i in ascii_lowercase:
+        if i not in sentence:
+            return False
+        
+        return True
+    
+    
+def is_pangram3(sentence: str) -> bool:
+    return set(ascii_lowercase).issubset(sentence.lower())
